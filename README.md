@@ -1,7 +1,7 @@
 # rpgt2d
 
 R Point Geometry Toolbox, 2D - a "mixed box" of helper functions to perform point transformations in 2D[^1].
-Focus on consistent argument naming and simplicity.
+Focus on consistent argument naming and simplicity, with few package dependencies.
 
 [^1]: Some of the functions herein might also work in 3D.
 
