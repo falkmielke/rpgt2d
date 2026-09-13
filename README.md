@@ -8,5 +8,5 @@ Focus on consistent argument naming and simplicity.
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("falkmielke/rpgt2d.git") # , ref = "HEAD")
+remotes::install_github("falkmielke/rpgt2d") # , ref = "HEAD")
 ```
