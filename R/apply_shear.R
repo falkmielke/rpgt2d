@@ -8,7 +8,7 @@
 #' @export
 #'
 apply_shear <- function(pointset, shear_matrix, center_of_action = NULL) {
-  return(rpgt2d::apply_matrix(pointset, shear_matrix, center_of_action))
+  return(apply_matrix(pointset, shear_matrix, center_of_action))
 } # /apply_shear
 
 
@@ -16,4 +16,4 @@ apply_shear <- function(pointset, shear_matrix, center_of_action = NULL) {
 #'
 #' @export
 #'
-shear <- rpgt2d::apply_shear
+shear <- apply_shear

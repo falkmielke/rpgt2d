@@ -12,12 +12,12 @@
 apply_scaling <- function(pointset, scaling, axis = NULL, fixpoint = NULL) {
 
   # temporarily center, i.e. shift centroid to origin, or use fixpoint
-  centroid <- rpgt2d::compute_centroid(pointset)
+  centroid <- compute_centroid(pointset)
   if (is.null(fixpoint)) {
-    pointset <- rpgt2d::shift_to_point(pointset, target = c(0., 0.))
+    pointset <- shift_to_point(pointset, target = c(0., 0.))
     fixpoint <- centroid
   } else {
-    pointset <- rpgt2d::apply_translation(pointset, shift = -fixpoint)
+    pointset <- apply_translation(pointset, shift = -fixpoint)
   }
 
   # scale
@@ -29,7 +29,7 @@ apply_scaling <- function(pointset, scaling, axis = NULL, fixpoint = NULL) {
   }
 
   # reverse shift to center
-  pointset <- rpgt2d::apply_translation(pointset, shift = fixpoint)
+  pointset <- apply_translation(pointset, shift = fixpoint)
 
   return(pointset)
 } # /apply_scaling

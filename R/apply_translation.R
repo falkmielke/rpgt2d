@@ -20,4 +20,4 @@ apply_translation <- function(pointset, shift) {
 #'
 #' @export
 #'
-move <- rpgt2d::apply_translation
+move <- apply_translation

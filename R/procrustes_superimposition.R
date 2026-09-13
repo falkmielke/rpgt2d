@@ -17,14 +17,14 @@ procrustes_superimposition <- function(
   }
 
   # store the rcs's and centroids
-  rcs_interest <- rpgt2d::compute_rcs(points_interest)
-  rcs_ref      <- rpgt2d::compute_rcs(points_ref)
-  centroid_ref <- rpgt2d::compute_centroid(points_ref)
-  centroid     <- rpgt2d::compute_centroid(points_interest)
+  rcs_interest <- compute_rcs(points_interest)
+  rcs_ref      <- compute_rcs(points_ref)
+  centroid_ref <- compute_centroid(points_ref)
+  centroid     <- compute_centroid(points_interest)
 
   # standardize
-  pts_interest_std <- rpgt2d::standardize(points_interest)
-  pts_ref_std      <- rpgt2d::standardize(points_ref)
+  pts_interest_std <- standardize(points_interest)
+  pts_ref_std      <- standardize(points_ref)
 
   # plot_points(points = pts_interest_std, ref_points = pts_ref_std)
 
@@ -101,20 +101,20 @@ apply_transformations <- function(pointset, params) {
   if (is.null(rotation_matrix)) {
     rotation_matrix <- diag(2)
   }
-  pointset <- rpgt2d::apply_rotation(pointset, rotation_matrix)
+  pointset <- apply_rotation(pointset, rotation_matrix)
 
   # scale
   if (is.null(f_scale)) {
     f_scale <- 1.
   }
-  pointset <- rpgt2d::apply_scaling(pointset, f_scale)
+  pointset <- apply_scaling(pointset, f_scale)
 
   # shift
   if (is.null(v_shift)) {
     v_shift <- c(0., 0.)
   }
 
-  pointset <- rpgt2d::apply_translation(pointset, shift = v_shift)
+  pointset <- apply_translation(pointset, shift = v_shift)
 
   return(pointset)
 } # /apply_transformations
@@ -127,28 +127,28 @@ apply_transformations <- function(pointset, params) {
 #'
 invert_transformations <- function(pointset, params) {
 
-  shift <- rpgt2d::invert_translation(params$shift)
-  scale <- rpgt2d::invert_scaling(params$scale)
-  rotation_matrix <- rpgt2d::invert_rotation_matrix(params$rotation_matrix)
+  shift <- invert_translation(params$shift)
+  scale <- invert_scaling(params$scale)
+  rotation_matrix <- invert_rotation_matrix(params$rotation_matrix)
   mirror_x <- params$mirror_x
 
   # un-shift
   if (is.null(shift)) {
     shift <- c(0., 0.)
   }
-  pointset <- rpgt2d::apply_translation(pointset, shift = shift)
+  pointset <- apply_translation(pointset, shift = shift)
 
   # un-scale
   if (is.null(scale)) {
     scale <- 1.
   }
-  pointset <- rpgt2d::apply_scaling(pointset, scale)
+  pointset <- apply_scaling(pointset, scale)
 
   # un-rotate
   if (is.null(rotation_matrix)) {
     rotation_matrix <- diag(2)
   }
-  pointset <- rpgt2d::apply_rotation(pointset, rotation_matrix)
+  pointset <- apply_rotation(pointset, rotation_matrix)
 
   # un-chain my heart...
   if (is.null(mirror_x)) mirror_x <- FALSE

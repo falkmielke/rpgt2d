@@ -9,21 +9,21 @@
 #'
 apply_matrix <- function(pointset, transformation_matrix, center_of_action = NULL) {
 
-  original_centroid <- rpgt2d::compute_centroid(pointset)
+  original_centroid <- compute_centroid(pointset)
 
   # default: center of action is the centroid
   if (is.null(center_of_action)) {
     center_of_action <- original_centroid
   }
 
-  pointset <- rpgt2d::apply_translation(pointset, -center_of_action)
+  pointset <- apply_translation(pointset, -center_of_action)
 
   # apply rotation
   pointset <- as.matrix(pointset) %*% transformation_matrix
 
 
   # revert shift
-  pointset <- rpgt2d::apply_translation(pointset, center_of_action)
+  pointset <- apply_translation(pointset, center_of_action)
 
 
   return(pointset)

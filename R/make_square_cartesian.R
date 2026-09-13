@@ -8,7 +8,7 @@
 #'
 make_square_cartesian <- function(pointset, aspect_ratio = NULL, axis = 1) {
   if (is.null(aspect_ratio)) {
-    aspect_ratio <- rpgt2d::compute_xy_aspect_cartesian(pointset)
+    aspect_ratio <- compute_xy_aspect_cartesian(pointset)
   }
 
   pointset[, axis] <- pointset[, axis] / aspect_ratio

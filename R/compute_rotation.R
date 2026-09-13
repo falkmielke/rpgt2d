@@ -8,8 +8,8 @@
 compute_rotation <- function(pointset, reference_pointset, prevent_mirroring = TRUE) {
 
   # standardize
-  pts_interest_std <- rpgt2d::standardize(pointset)
-  pts_ref_std <- rpgt2d::standardize(pointset)
+  pts_interest_std <- standardize(pointset)
+  pts_ref_std <- standardize(pointset)
 
   # (1) cross dispersion
   cross_dispersion <- as.matrix(t(pts_interest_std)) %*% as.matrix(pts_ref_std)

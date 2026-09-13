@@ -17,11 +17,11 @@ scale_to_size <- function(pointset, target = NULL, axis = NULL, fixpoint = NULL)
   }
 
   # original scale: the RCS
-  rcs <- rpgt2d::compute_rcs(pointset, axis = axis)
+  rcs <- compute_rcs(pointset, axis = axis)
 
   # apply the target scaling to pointset
   return(
-    rpgt2d::apply_scaling(
+    apply_scaling(
       pointset,
       scaling = target / rcs,
       axis = axis,

@@ -14,11 +14,11 @@ shift_to_point <- function(pointset, target = NULL) {
   }
 
   # starting point: the pointset centroid
-  centroid <- rpgt2d::compute_centroid(pointset)
+  centroid <- compute_centroid(pointset)
 
   # move pointset with `apply_translation`
   return(
-    rpgt2d::apply_translation(
+    apply_translation(
       pointset,
       shift = as.numeric(target) - as.numeric(centroid)
     )

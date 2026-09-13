@@ -10,7 +10,7 @@
 compute_aspects_cartesian <- function(pointset, axis = 1) {
 
   # center the set of points, i.e. move centroid to origin
-  pointset <- rpgt2d::shift_to_point(pointset)
+  pointset <- shift_to_point(pointset)
 
   # scale of the focal axis
   rcs_col <- sqrt(sum(pointset[, axis]^2))
@@ -26,4 +26,4 @@ compute_aspects_cartesian <- function(pointset, axis = 1) {
 #'
 #' @export
 #'
-compute_xy_aspect_cartesian <- \(ps) rpgt2d::compute_aspects_cartesian(ps)[[2]]
+compute_xy_aspect_cartesian <- \(ps) compute_aspects_cartesian(ps)[[2]]

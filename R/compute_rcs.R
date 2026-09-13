@@ -12,7 +12,7 @@ compute_rcs <- function(pointset, axis = NULL) {
 
   extent <- colSums(
     # move to origin for calculation
-    rpgt2d::shift_to_point(pointset)^2
+    shift_to_point(pointset)^2
   )
 
   if (is.null(axis)) {
