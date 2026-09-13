@@ -13,10 +13,10 @@ plot_points <- function(points, ref_points = NULL, ...) {
     all_points <- rbind(all_points, ref_points)
   }
 
-  passepartout <- 0.1 * sd(all_points)
+  passepartout <- 0.1 * stats::sd(all_points)
 
-  par(pty="s")
-  plot(
+  graphics::par(pty="s")
+  graphics::plot(
     ptmat,
     col = "black",
     xlim = c(
@@ -31,8 +31,8 @@ plot_points <- function(points, ref_points = NULL, ...) {
     ...
   )
 
-  text(
-    sweep(ptmat, 2, 0.02 * sd(ptmat), FUN = "+"),
+  graphics::text(
+    sweep(ptmat, 2, 0.02 * stats::sd(ptmat), FUN = "+"),
     labels = row.names(points),
     pos = 4
   )
@@ -40,7 +40,7 @@ plot_points <- function(points, ref_points = NULL, ...) {
   if (isFALSE(is.null(ref_points))) {
     rpx <- ref_points[, 1]
     rpy <- ref_points[, 2]
-    points(rpx, rpy, col = "gray", cex = 1.2, pch = 4)
+    graphics::points(rpx, rpy, col = "gray", cex = 1.2, pch = 4)
   }
 
 } # /plot_points

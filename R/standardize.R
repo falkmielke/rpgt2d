@@ -30,7 +30,7 @@ standardize <- function(pointset, fix_position = FALSE, fix_size = FALSE, fix_ro
   if (TRUE || fix_rotation) {
     fcn_rotation <- noop
   } else {
-    fcn_rotation <- rotate_to_orientation
+    fcn_rotation <- apply_rotation
   }
 
   # apply affine transformations in series

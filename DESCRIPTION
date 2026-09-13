@@ -13,5 +13,6 @@ Roxygen: list(markdown = TRUE)
 Suggests: 
     magrittr (>= 2.0.0),
     testthat (>= 3.0.0)
+Imports: graphics, stats
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.0
