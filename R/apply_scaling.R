@@ -41,3 +41,11 @@ apply_scaling <- function(pointset, scaling, axis = NULL, fixpoint = NULL) {
 
   return(pointset)
 } # /apply_scaling
+
+
+#' alias for `apply_scaling`
+#'
+#' @inheritParams apply_scaling
+#' @export
+#'
+scale <- apply_scaling
