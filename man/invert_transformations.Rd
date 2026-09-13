@@ -7,6 +7,14 @@
 \usage{
 invert_transformations(pointset, params)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{params}{A list of Procrustes parameters for affine transformation}
+}
+\value{
+a transformed pointset
+}
 \description{
 this will do the opposite of what is stored in the transformations
 (but possibly with a different point set)

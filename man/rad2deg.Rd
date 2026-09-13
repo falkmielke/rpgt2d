@@ -6,6 +6,12 @@
 \usage{
 rad2deg(rad)
 }
+\arguments{
+\item{rad}{angle in radians \verb{[0, 2π]}}
+}
+\value{
+angle in degrees \verb{[0, 360]}
+}
 \description{
 angles: radians to degrees
 }

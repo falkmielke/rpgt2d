@@ -6,6 +6,12 @@
 \usage{
 invert_scaling(s)
 }
+\arguments{
+\item{s}{scaling factor}
+}
+\value{
+inverse scaling factor
+}
 \description{
 invert a scaling factor
 }

@@ -4,7 +4,16 @@
 \alias{plot_points}
 \title{quickly get an overview of the points of interest}
 \usage{
-plot_points(points, ref_points = NULL, ...)
+plot_points(pointset, reference_pointset = NULL, ...)
+}
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{reference_pointset}{optional n-by-2 matrix of n 2D points which
+are plotted as reference points}
+
+\item{...}{more parameters for \code{graphics::plot}
+(already in use: col, xlim, ylim, xlab, ylab)}
 }
 \description{
 quickly get an overview of the points of interest

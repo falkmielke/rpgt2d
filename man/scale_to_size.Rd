@@ -6,6 +6,19 @@
 \usage{
 scale_to_size(pointset, target = NULL, axis = NULL, fixpoint = NULL)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{target}{a scalar to become the new RCS}
+
+\item{axis}{the coordinate axis along which to scale (anisotropic scaling)}
+
+\item{fixpoint}{an optional origin point (2D position vector)
+from which to apply scaling}
+}
+\value{
+a transformed pointset
+}
 \description{
 By default, pointset is scaled to unit RCS.
 Optionally scale only a single axis,

@@ -6,6 +6,17 @@
 \usage{
 compute_rotation(pointset, reference_pointset, prevent_mirroring = TRUE)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{reference_pointset}{another 2D pontset (same n-by-2 dimensions)
+which serves as reference}
+
+\item{prevent_mirroring}{(TRUE) avoid involuntary flipping of the pointset}
+}
+\value{
+relative rotation matrix of the pointset to the reference
+}
 \description{
 Apply Kabsch algorithm to find rotation to reference
 }

@@ -6,6 +6,12 @@
 \usage{
 invert_shear_matrix(M)
 }
+\arguments{
+\item{M}{shear matrix}
+}
+\value{
+inverse shear matrix
+}
 \description{
 invert a shear operation
 }

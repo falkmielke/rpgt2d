@@ -6,6 +6,12 @@
 \usage{
 invert_rotation_matrix(M)
 }
+\arguments{
+\item{M}{rotation matrix}
+}
+\value{
+inverse rotation matrix
+}
 \description{
 invert a rotation matrix
 }

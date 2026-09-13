@@ -6,6 +6,12 @@
 \usage{
 compute_centroid(pointset)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+}
+\value{
+the centroid as 2D position vector
+}
 \description{
 the centroid of a set of points
 }

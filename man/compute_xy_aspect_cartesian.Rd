@@ -4,7 +4,10 @@
 \alias{compute_xy_aspect_cartesian}
 \title{specifically compute the x/y aspect along cartesian axes}
 \usage{
-compute_xy_aspect_cartesian(ps)
+compute_xy_aspect_cartesian(pointset)
+}
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
 }
 \description{
 specifically compute the x/y aspect along cartesian axes

@@ -30,6 +30,8 @@ compute_aspects_cartesian <- function(pointset, axis = 1) {
 
 #' specifically compute the x/y aspect along cartesian axes
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#'
 #' @export
 #'
-compute_xy_aspect_cartesian <- \(ps) compute_aspects_cartesian(ps)[[2]]
+compute_xy_aspect_cartesian <- \(pointset) compute_aspects_cartesian(pointset)[[2]]

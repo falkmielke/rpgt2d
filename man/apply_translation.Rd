@@ -6,6 +6,15 @@
 \usage{
 apply_translation(pointset, shift)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{shift}{a 2D vector (directed translation offset)
+along which points are moved}
+}
+\value{
+a transformed pointset
+}
 \description{
 shift points along a vector
 }

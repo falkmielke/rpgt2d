@@ -6,6 +6,14 @@
 \usage{
 apply_transformations(pointset, params)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{params}{A list of Procrustes parameters for affine transformation}
+}
+\value{
+a transformed pointset
+}
 \description{
 Actions include, in order of appearance:
 \itemize{

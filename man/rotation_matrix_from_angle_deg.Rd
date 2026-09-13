@@ -6,6 +6,12 @@
 \usage{
 rotation_matrix_from_angle_deg(deg)
 }
+\arguments{
+\item{deg}{angle in degrees \verb{[0, 360]}}
+}
+\value{
+2-by-2 rotation matrix
+}
 \description{
 compose a rotation matrix from an angle (degrees!)
 }

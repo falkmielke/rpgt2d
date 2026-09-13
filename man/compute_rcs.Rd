@@ -6,6 +6,14 @@
 \usage{
 compute_rcs(pointset, axis = NULL)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{axis}{the coordinate axis along which to calculate}
+}
+\value{
+RCS = Root Centroid Size of the pointset
+}
 \description{
 RCS is a scalar, defined as the root sum of
 euclidean distances of all points from their centroid.

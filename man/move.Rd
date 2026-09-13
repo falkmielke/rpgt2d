@@ -6,6 +6,12 @@
 \usage{
 move(pointset, shift)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{shift}{a 2D vector (directed translation offset)
+along which points are moved}
+}
 \description{
 alias for \code{apply_translation}
 }

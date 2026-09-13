@@ -11,6 +11,21 @@ procrustes_superimposition(
   mirror_x = FALSE
 )
 }
+\arguments{
+\item{points_interest}{a n-by-2 matrix of n 2D points which is
+the shape to be transformed}
+
+\item{points_ref}{a n-by-2 matrix of n 2D points which serves
+as the reference shape}
+
+\item{disable_mirror}{avoid mirroring during rotation}
+
+\item{mirror_x}{enforce prior mirroring of x-values on the y-axis}
+}
+\value{
+a list containing the calculated transformation
+operations/parameters and Procrustes Distance
+}
 \description{
 calculate Procrustes transformation parameters
 }

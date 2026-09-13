@@ -6,6 +6,15 @@
 \usage{
 compute_aspects_cartesian(pointset, axis = 1)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{axis}{the coordinate axis along which to calculate}
+}
+\value{
+current relative aspects (relative to \code{axis}) of the
+pointset in all dimensions
+}
 \description{
 compute ratios of the centroid size axes relative to one focal axis
 }

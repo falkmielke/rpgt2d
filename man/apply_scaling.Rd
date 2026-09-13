@@ -6,6 +6,19 @@
 \usage{
 apply_scaling(pointset, scaling, axis = NULL, fixpoint = NULL)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{scaling}{a scalar by which to scale the points}
+
+\item{axis}{the coordinate axis along which to scale (anisotropic scaling)}
+
+\item{fixpoint}{an optional origin point (2D position vector)
+from which to apply scaling}
+}
+\value{
+a transformed pointset
+}
 \description{
 scaling has to happen around the points' centroid
 optional anisotropic scaling: choose one axis

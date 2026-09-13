@@ -5,7 +5,7 @@
 
 #' compose a rotation matrix from an angle (radians!)
 #'
-#' @param rad angle in radians [0, 2π]
+#' @param rad angle in radians `[0, 2π]`
 #'
 #' @returns 2-by-2 rotation matrix
 #'
@@ -15,9 +15,9 @@ rotation_matrix_from_angle_rad <- \(rad) as.matrix(rbind(c(cos(rad), -sin(rad)),
 
 #' angles: degrees to radians
 #'
-#' @param deg angle in degrees [0, 360]
+#' @param deg angle in degrees `[0, 360]`
 #'
-#' @returns angle in radians [0, 2π]
+#' @returns angle in radians `[0, 2π]`
 #'
 #' @export
 #'
@@ -25,6 +25,8 @@ deg2rad <- \(deg) deg*pi/180
 
 #' angles: radians to degrees
 #'
+#' @param rad angle in radians `[0, 2π]`
+#' @returns angle in degrees `[0, 360]`
 #' @export
 #'
 rad2deg <- \(rad) rad*180/pi
@@ -32,7 +34,7 @@ rad2deg <- \(rad) rad*180/pi
 
 #' compose a rotation matrix from an angle (degrees!)
 #'
-#' @param deg angle in degrees [0, 360]
+#' @param deg angle in degrees `[0, 360]`
 #'
 #' @returns 2-by-2 rotation matrix
 #'

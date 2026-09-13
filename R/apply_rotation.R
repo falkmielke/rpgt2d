@@ -21,6 +21,7 @@ apply_rotation <- function(pointset, rotation_matrix, center_of_action = NULL) {
 
 #' alias for `apply_rotation`
 #'
+#' @inheritParams apply_rotation
 #' @export
 #'
 rotate <- apply_rotation

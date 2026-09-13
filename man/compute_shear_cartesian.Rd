@@ -11,6 +11,19 @@ compute_shear_cartesian(
   fix_y = FALSE
 )
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{reference_pointset}{another 2D pontset (same n-by-2 dimensions)
+which serves as reference}
+
+\item{fix_x}{do not shear along the first dimension}
+
+\item{fix_y}{do not shear along the second dimension}
+}
+\value{
+relative shear matrix of the pointset to the reference
+}
 \description{
 optionally fixing either direction
 }

@@ -6,6 +6,14 @@
 \usage{
 shift_to_point(pointset, target = NULL)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{target}{a 2D position vector to become the new centroid}
+}
+\value{
+a transformed pointset
+}
 \description{
 Default target point is the coordinate origin
 }

@@ -6,6 +6,12 @@
 \usage{
 rotation_matrix_from_angle_rad(rad)
 }
+\arguments{
+\item{rad}{angle in radians \verb{[0, 2π]}}
+}
+\value{
+2-by-2 rotation matrix
+}
 \description{
 compose a rotation matrix from an angle (radians!)
 }

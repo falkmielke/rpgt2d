@@ -11,6 +11,18 @@ standardize(
   fix_rotation = TRUE
 )
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{fix_position}{whether or not to apply translation}
+
+\item{fix_size}{whether or not to apply scaling}
+
+\item{fix_rotation}{whether or not to apply rotation}
+}
+\value{
+a transformed pointset
+}
 \description{
 affine transformations to default values
 }

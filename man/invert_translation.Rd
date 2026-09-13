@@ -6,6 +6,12 @@
 \usage{
 invert_translation(v)
 }
+\arguments{
+\item{v}{translation vector}
+}
+\value{
+inverse translation vector
+}
 \description{
 invert a translation
 }

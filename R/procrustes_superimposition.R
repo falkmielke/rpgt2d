@@ -3,9 +3,9 @@
 
 #' calculate Procrustes transformation parameters
 #'
-#' @param point_interest a n-by-2 matrix of n 2D points which is
+#' @param points_interest a n-by-2 matrix of n 2D points which is
 #'        the shape to be transformed
-#' @param point_ref a n-by-2 matrix of n 2D points which serves
+#' @param points_ref a n-by-2 matrix of n 2D points which serves
 #'        as the reference shape
 #' @param disable_mirror avoid mirroring during rotation
 #' @param mirror_x enforce prior mirroring of x-values on the y-axis

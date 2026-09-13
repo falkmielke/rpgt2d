@@ -6,6 +6,17 @@
 \usage{
 apply_shear(pointset, shear_matrix, center_of_action = NULL)
 }
+\arguments{
+\item{pointset}{a n-by-2 matrix of n 2D points}
+
+\item{shear_matrix}{a 2-by-2 shear matrix matrix}
+
+\item{center_of_action}{an optional origin point (2D position vector)
+from which to apply the shear transformation}
+}
+\value{
+a transformed pointset
+}
 \description{
 around a given center of shearing (default: centroid)
 }
