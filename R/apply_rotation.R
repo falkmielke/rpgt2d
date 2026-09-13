@@ -1,0 +1,19 @@
+#!/usr/bin/env Rscript
+
+
+#' apply a rotation matrix to a set of points 
+#'
+#' around a given center of rotation (default: centroid)
+#'
+#' @export
+#'
+apply_rotation <- function(pointset, rotation_matrix, center_of_rotation = NULL) {
+  return(rpgt2d::apply_matrix(pointset, rotation_matrix, center_of_rotation))
+} # /apply_rotation
+
+
+#' alias for `apply_rotation`
+#'
+#' @export
+#'
+rotate <- rpgt2d::apply_rotation
