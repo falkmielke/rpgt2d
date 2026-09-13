@@ -7,8 +7,8 @@
 #'
 #' @export
 #'
-apply_rotation <- function(pointset, rotation_matrix, center_of_rotation = NULL) {
-  return(rpgt2d::apply_matrix(pointset, rotation_matrix, center_of_rotation))
+apply_rotation <- function(pointset, rotation_matrix, center_of_action = NULL) {
+  return(rpgt2d::apply_matrix(pointset, rotation_matrix, center_of_action))
 } # /apply_rotation
 
 
