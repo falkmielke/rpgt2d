@@ -3,6 +3,11 @@
 
 #' Apply Kabsch algorithm to find rotation to reference
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param reference_pointset another 2D pontset (same n-by-2 dimensions) 
+#'        which serves as reference
+#' @param prevent_mirroring (TRUE) avoid involuntary flipping of the pointset
+#'
 #' @export
 #'
 compute_rotation <- function(pointset, reference_pointset, prevent_mirroring = TRUE) {

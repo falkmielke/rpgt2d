@@ -5,6 +5,9 @@
 #'
 #' compute ratios of the centroid size axes relative to one focal axis
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param axis the coordinate axis along which to calculate
+#'
 #' @export
 #'
 compute_aspects_cartesian <- function(pointset, axis = 1) {

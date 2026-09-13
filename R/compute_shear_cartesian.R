@@ -5,6 +5,12 @@
 #'
 #' optionally fixing either direction
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param reference_pointset another 2D pontset (same n-by-2 dimensions) 
+#'        which serves as reference
+#' @param fix_x do not shear along the first dimension
+#' @param fix_y do not shear along the second dimension
+#'
 #' @export
 #'
 compute_shear_cartesian <- function(pointset, reference_pointset, fix_x = FALSE, fix_y = FALSE) {
