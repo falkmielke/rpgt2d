@@ -7,6 +7,14 @@
 #' optional anisotropic scaling: choose one axis
 #' optionally set a fixpoint (for scaling off-centroid)
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param scaling a scalar by which to scale the points
+#' @param axis the coordinate axis along which to scale (anisotropic scaling)
+#' @param fixpoint an optional origin point (2D position vector)
+#'                 from which to apply scaling
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 apply_scaling <- function(pointset, scaling, axis = NULL, fixpoint = NULL) {

@@ -4,6 +4,13 @@
 #'
 #' this does not literally create a square, but corrects the point sets aspect.
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param aspect_ratio the aspect ratio by which the
+#'                     existing aspect is corrected (divided)
+#' @param axis the coordinate axis along which to scale (anisotropic scaling)
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 make_square_cartesian <- function(pointset, aspect_ratio = NULL, axis = 1) {

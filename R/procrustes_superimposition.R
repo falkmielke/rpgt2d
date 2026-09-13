@@ -3,6 +3,16 @@
 
 #' calculate Procrustes transformation parameters
 #'
+#' @param point_interest a n-by-2 matrix of n 2D points which is
+#'        the shape to be transformed
+#' @param point_ref a n-by-2 matrix of n 2D points which serves
+#'        as the reference shape
+#' @param disable_mirror avoid mirroring during rotation
+#' @param mirror_x enforce prior mirroring of x-values on the y-axis
+#'
+#' @returns a list containing the calculated transformation
+#'          operations/parameters and Procrustes Distance
+#'
 #' @export
 #'
 procrustes_superimposition <- function(
@@ -82,6 +92,11 @@ procrustes_superimposition <- function(
 #'   - scaling with root centroid size
 #'   - translation by a shift vector
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param params A list of Procrustes parameters for affine transformation
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 apply_transformations <- function(pointset, params) {
@@ -122,6 +137,11 @@ apply_transformations <- function(pointset, params) {
 
 #' this will do the opposite of what is stored in the transformations
 #' (but possibly with a different point set)
+#'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param params A list of Procrustes parameters for affine transformation
+#'
+#' @returns a transformed pointset
 #'
 #' @export
 #'

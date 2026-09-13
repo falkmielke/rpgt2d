@@ -11,6 +11,8 @@
 #' @param fix_x do not shear along the first dimension
 #' @param fix_y do not shear along the second dimension
 #'
+#' @returns relative shear matrix of the pointset to the reference
+#'
 #' @export
 #'
 compute_shear_cartesian <- function(pointset, reference_pointset, fix_x = FALSE, fix_y = FALSE) {

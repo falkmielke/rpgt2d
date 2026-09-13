@@ -4,6 +4,11 @@
 #'
 #' Default target point is the coordinate origin
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param target a 2D position vector to become the new centroid
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 shift_to_point <- function(pointset, target = NULL) {

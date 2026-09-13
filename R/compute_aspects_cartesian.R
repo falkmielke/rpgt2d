@@ -8,6 +8,9 @@
 #' @param pointset a n-by-2 matrix of n 2D points
 #' @param axis the coordinate axis along which to calculate
 #'
+#' @returns current relative aspects (relative to `axis`) of the
+#'          pointset in all dimensions
+#'
 #' @export
 #'
 compute_aspects_cartesian <- function(pointset, axis = 1) {

@@ -5,6 +5,13 @@
 #'
 #' affine transformations to default values
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param fix_position whether or not to apply translation
+#' @param fix_size whether or not to apply scaling
+#' @param fix_rotation whether or not to apply rotation
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 standardize <- function(pointset, fix_position = FALSE, fix_size = FALSE, fix_rotation = TRUE) {

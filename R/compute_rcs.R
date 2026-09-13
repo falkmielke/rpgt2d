@@ -9,6 +9,8 @@
 #' @param pointset a n-by-2 matrix of n 2D points
 #' @param axis the coordinate axis along which to calculate
 #'
+#' @returns RCS = Root Centroid Size of the pointset
+#'
 #' @export
 #'
 compute_rcs <- function(pointset, axis = NULL) {

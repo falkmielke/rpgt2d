@@ -8,6 +8,8 @@
 #'        which serves as reference
 #' @param prevent_mirroring (TRUE) avoid involuntary flipping of the pointset
 #'
+#' @returns relative rotation matrix of the pointset to the reference
+#'
 #' @export
 #'
 compute_rotation <- function(pointset, reference_pointset, prevent_mirroring = TRUE) {

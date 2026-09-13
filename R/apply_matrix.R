@@ -5,6 +5,13 @@
 #'
 #' optional: given center of action (default: centroid)
 #'
+#' @param pointset a n-by-2 matrix of n 2D points
+#' @param transformation_matrix a 2-by-2 transformation matrix
+#' @param center_of_action an optional origin point (2D position vector)
+#'                 from which to apply the transformation
+#'
+#' @returns a transformed pointset
+#'
 #' @export
 #'
 apply_matrix <- function(pointset, transformation_matrix, center_of_action = NULL) {
